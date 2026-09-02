@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajudar | ONG Abrace um Pet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+     <!-- BARRA DE NAVEGAÇÃO -->
+    <header class="header">
+        <nav class="nav-container">
+            <p class="logo">🐾 Abrace um Pet</p>
+            <ul class="nav-links">
+                <li><a class="nav-item" href="index.html">Início</a></li>
+                <li><a class="nav-item" href="adotar.html">Adotar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <section class="pagina-titulo">
+            <img class="foto-gatos" src="assets/gatos-img.jpg" alt="foto de gatos">
+ <img class="foto-gato" src="assets/gato.jpg" alt="imagem de gato">
+            <h1>Para onde vai a sua doação?</h1>
+            <p>Sua ajuda mantém a alimentação de centenas de animais indefesos, contribuindo também para vacinação, tratamento médico, higiene e o bem-estar dos nossos pets.</p>
+
+            <img class="foto-cachorros" src="assets/cachorros-img.jpg" alt="">
+        </section>
+
+        <div class="cards-doacao">
+            <!-- PIX -->
+            <div class="box-card">
+                <div class="card-header">
+                    <h2>Doar via PIX</h2>
+                    <img class="pix-icon" src="assets/icone-pix.png" alt="Ícone do Pix" >
+                </div>
+                <p><strong>Chave Pix (CNPJ):</strong> <span id="chave-pix">00.000.000/0001-00</span></p>
+                <button class="btn-copiar" onclick="copiarPix()">Copiar Chave Pix</button>
+                <span id="aviso" class="aviso-sucesso">✓ Chave copiada com sucesso!</span>
+            </div>
+
+            <!-- BANCO -->
+            <div class="banco-detalhes">
+                <h2>Transferência Bancária</h2>
+                <div>
+                    <p><strong>Banco:</strong> 001 - Banco do Brasil</p>
+                    <p><strong>Agência:</strong> 1234-5</p>
+                    <p><strong>Conta Corrente:</strong> 12345-6</p>
+                    <p><strong>Favorecido:</strong> ONG ABRACE UM PET</p>
+                    <p><strong>CPF/CNPJ:</strong> 00.000.000/0001-00</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 - ONG ABRACE UM PET - Desenvolvido por <strong>Camila Romão</strong></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

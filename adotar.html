@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Adoção | ONG Abrace Um Pet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav-container">
+            <p class="logo">🐾 Abrace um Pet</p>
+            <ul class="nav-links">
+                <li><a class="nav-item" href="index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-adocao">
+        <section class="card-formulario">
+            <h2>FORMULÁRIO DE ADOÇÃO</h2>
+            <p class="responda-sinceridade">Por favor, responda com muita sinceridade.</p>
+
+            <!-- O <form> envolve TODOS os campos -->
+            <form id="formAdocao">
+                
+                <div class="campo-grupo">
+                    <label for="nome">Seu Nome Completo:</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="cpf">Seu CPF:</label>
+                    <input type="text" id="cpf" placeholder="000.000.000-00" maxlength="14" required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="whatsapp">Seu Celular / WhatsApp:</label>
+                    <input type="tel" id="whatsapp" placeholder="(13) 99999-9999" required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="animal">Gato ou Cachorro?</label>
+                    <select id="animal" required>
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="Cachorro">Cachorro</option>
+                        <option value="Gato">Gato</option>
+                        <option value="Ambos">Tanto faz / Ambos</option>
+                    </select>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="renda">Sua Renda Atual Aproximada (R$):</label>
+                    <input type="number" id="renda" placeholder="Ex: 2500" min="0" required>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Formulário</button>
+            </form>
+
+            <div id="mensagemSucesso" class="mensagem-sucesso"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - ONG Abrace Um Pet - Desenvolvido por <strong>Camila Romão</strong>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
