@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fc;
+    color: #040404;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header .nav-container {
+    background-color: aqua;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-item:hover {
+   color: rgb(119, 134, 246);
+}
+
+.nav-container .logo {
+    padding: 20px;
+    color: #040404;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: -10px;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 5px 0;
+}
+
+.dropbtn:hover,
+.dropdown:hover .dropbtn {
+    color: #5485ce;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #254384;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    min-width: 220px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    z-index: 1001;
+}
+
+.dropdown-content::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+}
+
+.dropdown-content a {
+    color: #ffffff;
+    padding: 14px 18px;
+    display: block;
+    font-size: 0.9rem;
+    transition: background 0.2s ease;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #5485ce;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ====================== AREA DE DOAÇÃO =========================== */
+
+.pagina-titulo {
+    line-height: 1.6;
+    text-align: center;
+    color: #000000;
+    margin: 10px auto;
+    width: 90%;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.cards-doacao {
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+    color: #000000;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.pix-icon {
+    width: 80px;
+    height: 80px;
+    margin: 10px auto;
+    background: url('icone-pix.png') no-repeat center / contain;
+    border-radius: 50%;
+}
+
+.btn-copiar {
+    background: #c49bf6; 
+    padding: 7px;
+    border-radius: 10px;
+    color: #141a25;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; ;
+}
+
+.btn-copiar:hover {
+    background-color: #7ca5fd;
+}
+
+.btn-copiar:active {
+    transform: scale(0.95);
+}
+
+.banco-detalhes {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #000000;
+    margin: 15px auto;
+    width: 90%;
+}
+
+.btn-contato {
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.btn-contato:hover {
+    color: #afaafc;
+}
+
+.container-adocao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    flex: 1;
+}
+
+h2 {
+    color: #254384;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+footer {
+    width: 100%;
+    padding: 20px 10px;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    margin-top: auto;
+}
+
+/* ========== MOBILE =========== */
+
+@media (min-width: 1024px) {
+    
+    .nav-links {
+        gap: 50px;
+    }
+
+    .pagina-titulo h1 {
+        position: absolute;
+        width: 469px;
+        height: 48px;
+        left: 480px;
+        top: 200px;
+        font-size: 25px;
+        line-height: 48px;
+        margin: 0;
+    }
+
+    .pagina-titulo p {
+        position: absolute;
+        width: 847px;
+        height: 108px;
+        left: 225px;
+        top: 240px;
+        font-size: 15px;
+        line-height: 36px;
+        margin: 0;
+    }
+
+    .cards-doacao {
+        position: absolute;
+        width: 595px;
+        height: 48px;
+        left: 350px;
+        top: 380px;
+        font-size: 20px;
+        line-height: 28px;
+        margin: 0;
+    }
+
+    .pix-icon {
+        position: absolute;
+        width: 93px;
+        height: 100px;
+        left: 500px;
+        top: 0;
+        margin: 0;
+    }
+
+    .banco-detalhes {
+        position: absolute;
+        width: 387px;
+        height: auto;
+        left: 100px;
+        top: 180px;
+        font-size: 20px;
+        line-height: 26px;
+        margin: 0;
+    }
+
+    footer {
+        position: absolute;
+        width: 768px;
+        height: 24px;
+        left: 330px;
+        top: 800px;
+        margin: 0;
+    }
+}
